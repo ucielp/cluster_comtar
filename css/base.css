@@ -1,0 +1,567 @@
+/* Colours
+ * #444444 Gris letra general
+ * #D0D0D0 Gris borde container y sombra
+ * #30787e Verde de los links y punteado del menu y del header esa barra del titulo y RGB 48, 120, 126
+ * #e78e35 Naranja del menu hover y link
+ * #009 azul hover en targets  
+ * 
+*/
+body {
+	/*background: #e7e7e2;*/
+	padding: 0; 
+	margin: 0;
+	text-align: center; /*part 1 of centering hack*/
+}
+
+/*global font family*/
+body, p, h1, h2, h3, h4, h5, h6, address {
+	font-family: arial, helvetica, verdana, sans-serif;
+	color: #444444;
+	font-size: 10px;
+}
+h2 { 
+	font-size: 10px; 
+	color: #D8000C; 
+	padding:0px;
+	}
+a.h2{
+	color: #yellow; 
+}
+p2{
+	font-family: monospace, helvetica, verdana, sans-serif;
+	color: #444444;
+	font-size: 10px;
+}
+
+img {
+	border: 0;
+}
+
+
+#container {
+	border: 1px solid #D0D0D0;
+	-webkit-box-shadow: 0 0 8px #D0D0D0;
+/*	-moz-box-shadow: 0 0 8px #D0D0D0;*/
+	box-shadow: 0 0 8px #D0D0D0;
+	width: 900px;
+	text-align: left; /*part 2 of centering hack*/
+    font-family : Lucida Grande, Tahoma, Arial, Helvetica, sans-serif;
+	margin: 20px auto;
+	padding:  40px;
+	/*position: relative;*/
+	/* min-height: 100%;*/
+	min-height: 600px;
+	height: 100%;
+	voice-family: "\"}\"";
+    voice-family: inherit;
+    height: auto;
+}
+
+/* CONTENT ELEMENTS */
+
+		
+/*//////////////////////SETTINGS FOR FOOTER//////////////////////*/
+#footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+/* 	background-color: rgba(48, 120, 126, 0.2); */
+
+
+	} 
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+/*//////////////////////END SETTINGS FOR FOOTER//////////////////*/
+
+/*clearer hack*/
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+/* End hide from IE-mac */
+
+
+/***********************COLOR SETTINGS***********************/
+/*To change the colors of the site or scheme, this is the place  */
+/*************************************************************/
+
+A:link {text-decoration: none; color: #30787e}
+A:visited {text-decoration: none; color: #30787e}
+A:active {text-decoration: none; color: #30787e}
+/* .class1 A:hover {text-decoration: none;background-color: #d9ebff;} */
+/*.class1 TD {border: 1px dotted}
+.class1 TD:link {text-decoration: none}
+.class1 TD:visited {text-decoration: none}
+.class1 TD:active {text-decoration: none}
+.class1 TD:hover {background-color: #d9ebff;}*/
+
+
+ 
+/* HEADER ELEMENTS */ 
+		
+#header {
+    border-bottom: 2px solid #D0D0D0;
+    padding:20px 0 30px 0;
+    clear: both;
+    
+  }
+  
+/* NEW NAVIGATION */
+
+ul.nav {
+	list-style: none;
+	display: block;
+	width: 10%;
+	float: left;
+	margin:20px 0 0px 20px;
+	position: relative;
+	padding: 0;
+	-webkit-background-size: 50% 100%;
+}
+
+li {
+	margin: 0 0 5px 0;
+}
+
+ul.nav li a {
+	-webkit-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+
+	/* background: #cbcbcb url(border.png) no-repeat; */
+	color: #174867;
+	padding: 7px 15px 7px 15px;
+	-webkit-border-top-right-radius: 4px;
+			border-top-right-radius: 4px;
+ 	-webkit-border-bottom-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+	width: 70px;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+		    box-shadow: 2px 2px 4px #888;
+
+}
+
+ul.nav li a:hover {
+/*
+	background: #ebebeb url(border.png) no-repeat;
+*/
+	color: #67a5cd;
+	padding: 7px 15px 7px 30px;
+}
+
+/* MORE OPTIONS DISPLAY - TARGETS */
+.slidingDiv {
+/*  height:300px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;   */
+    padding: 40px 10px 20px 0px;
+
+}
+
+/*  HEADER RESULTS  */
+.header_result{
+	background-color: rgba(48, 120, 126, 0.2);
+/*
+background: rgba(255,100,0,0.5);
+*/
+
+    width: 80%;
+    padding: 10px;
+    float:right;
+    margin: 20px 0 0 0;
+   	border-radius:10px;
+    -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+.header_result p{
+	padding-bottom:10px;
+	margin:0px;
+}
+
+.header_result h1{
+font-size:16px;
+}
+
+
+/* Added by me */
+/* 	TABLES */
+/* DEFAULT */
+
+ th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+/*
+	border-top: 1px dotted grey ;
+	border-right: 1px dotted grey;
+	border-left: 1px dotted grey;
+	border-bottom: 1px dotted grey	;
+	background-color: #d9ebff;
+*/
+}
+
+td
+{
+	font-size: 14px;
+	padding: 20px;
+	/*
+	border-top: 1px dotted grey ;
+	border-right: 1px dotted grey;
+	border-left: 1px dotted grey;
+	border-bottom: 1px dotted grey	;
+	background-color: white;
+*/	
+}
+
+/* HOME  */
+#home{
+margin:0 0 0 60px;
+float:left;
+}
+
+#home table{
+	position:relative;
+	top:-50px;
+
+}	
+#home td {
+
+	text-align: center;
+	
+	}    
+
+#home h1{
+font-size:20px;
+color:#30787e;
+}
+
+#home h2{
+font-size:16px;
+color:#444444;
+}
+
+/* TARGETS */
+#targets
+{
+	font-size: 16px;
+	background: #fff;
+	margin: 180px 0 0 10px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+#targets th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color:#30787e;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#targets td.altert_color
+{ 
+	color: red;
+}
+
+#targets td.not_in_color
+{ 
+	color: blue;
+}
+
+#targets td.default
+{ 
+	color: #669;
+}
+#targets td
+{
+	font-size: 12px;
+	color: #669;
+	padding: 9px 8px 0px 8px;
+	vertical-align:top;
+	text-align:center;
+
+	}	
+
+#targets tbody tr:hover td
+{
+	color: #009;
+	
+}
+
+/* species in targets_results start hidden */
+
+/*
+tr.starthidden { 
+	display: inherit;
+ }
+*/
+
+.button_show{
+	cursor:pointer;
+	color:#30787E;
+}
+/* HOME TARGETS */
+#home_target
+{	
+	font-size: 16px;
+	background: #fff;
+	margin: 150px 0px 0px 150px;
+	width: 600px;
+}
+#home_target p{
+	font-size: 16px;
+}
+
+.show_hide_options {
+    display:none;
+    font-size:18px;
+
+}
+
+.advance-options{
+/*	Esto es si quiero ocultar Advanced options */
+    display:none; /* Tambien tengo que ocultar line-separator*/
+	padding:25px;
+	margin: 0 0 0 150px;
+}
+
+.line-separator{	
+	display:none;
+	margin: 0 0 15px 0;
+	border-bottom:1px solid #cccccc;
+	padding: 0px 0 0px 0;
+}
+
+/* BOTONES SEARCH Y GO BACK */
+
+a.goback {
+	text-align:center;
+	float:right;
+	font-size:13px;
+	color:#fff!important;
+	text-decoration:none;
+	margin-top:70px;
+	margin-right:0px;
+	background:#454545;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:8px;
+}
+
+a.goback:hover{
+	background:#272727
+}
+
+input.search {
+	font-size:13px;
+	color:#fff!important;
+	text-decoration:none;
+	margin-top:30px;
+	background:#454545;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:10px;
+	cursor:pointer;
+  }
+
+.error{
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('error.png');
+
+}
+
+#HelpMsg{
+font-size:10px;
+}
+
+
+.tooltip{
+	font-size:10px;
+	cursor:help;
+	padding:0 0 0 5px;
+}
+
+a.tooltip {outline:none; 
+}
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+	font-size:10px;
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:240px; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*
+CSS3 extras
+a.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+        
+    -moz-box-shadow: 5px 5px 8px #CCC;
+    -webkit-box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+*/
+
+/* Esto es para loading y results*/
+.query_result {
+    display:none;
+    margin:200px 0 0 0 ;
+}
+
+.loading{
+	padding: 50px;
+	text-align:center;
+		margin: 150px 0 0 10px;
+
+}
+.loading p{
+	font-size:20px;
+}
+
+.choose_where_is{
+	margin: 250px 0 0 150px;
+}
+.choose_where_is p{
+	padding-bottom:10px;
+	margin: 0 0 30px 0 ;
+}
+
+a.whereis_button {
+	text-align:center;
+	font-size:13px;
+	color:#30787e!important;
+	text-decoration:none;
+	margin:0px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:12px;
+}
+
+a.whereis_button:hover{
+	color:#fff!important;
+	background:#afafaf
+}
+
+/*
+ Home Home
+*/
+#home_home h1{
+font-size:18px;
+color:#30787e;
+}
+
+#home_home h2{
+font-size:14px;
+color:#444444;
+}
+
+#home_home h3{
+font-size:10px;
+color:#444444;
+}
+
+.button_more {
+   background: white;
+   padding: 5px 5px;
+   -webkit-border-radius: 82px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   color: #30787e;
+   font-size: 10px;
+   text-decoration: none;
+   vertical-align: middle;
+   	cursor:pointer;
+
+}
+.button_more:hover {
+    background: #30787e;
+   color: #ccc;
+   
+}
+.button_more:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}
+
+/*
+Bysequence
+*/
+input[type="sequence"] { width: 250px; }
+
+input.error {
+  width: 200px;
+  background-color:#FFEBEF;
+  background-image: url('icon-fail.png');
+  background-position:100% 50%;
+  background-repeat:no-repeat no-repeat;
+  color:#480000;
+  padding:3px;
+
+}
+
+#formsucess h1{
+padding:50px 0 50px 0;
+font-size:16px;
+
+}
+
+#formsucess a{
+font-size:16px;
+color:#30787e;
+}
+
+
+#myform h2{
+padding:0 0 20px 0;
+font-size:16px;
+color:#444444;
+}
+
+#myform h1{
+font-size:20px;
+color:#30787e;
+}
+
+
