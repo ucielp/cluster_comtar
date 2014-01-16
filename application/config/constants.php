@@ -50,8 +50,13 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('PROFILING_CONST',FALSE);
 
 //~ Databases and address
-define('BASE_URL_UPC',   '192.168.83.89'); 			#lab
-define('BASE_URL_CLUSTER',   '/cluster_comtar/');
+define('BASE_URL_UPC',   '192.168.83.89'); 		 # lab
+//~ define('BASE_URL_UPC',   '192.168.83.89'); 	     # para el cluster
+define('BASE_URL_CLUSTER',   '/cluster_comtar'); # lab
+//~ define('BASE_URL_CLUSTER',   '/cluster_comtar'); # para el cluster
+define('PATH_PATMATCH_CLUSTER',   '/home/uciel/lab/programas/patmatch_2013'); #lab
+//~ define('PATH_PATMATCH_CLUSTER',   '/home/uchorostecki.ibr/patmatchPro'); # para el cluster
+
 
 define('MIN_SPECIES',   2);
 define('MAX_SPECIES',  10);

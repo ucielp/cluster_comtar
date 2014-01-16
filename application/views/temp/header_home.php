@@ -3,17 +3,17 @@
  <meta http-equiv="content-script-type" charset=utf-8 content="text/javascript">
  <meta http-equiv="content-style-type" content="text/css">
 
-<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>js/jscripts/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>js/jscripts/jsphylosvg-1.55/jsphylosvg-min.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>js/jscripts/jsphylosvg-1.55/raphael-min.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>js/jscripts/jquery.multi-select.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>js/jscripts/jquery-ui.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>/js/jscripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>/js/jscripts/jsphylosvg-1.55/jsphylosvg-min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>/js/jscripts/jsphylosvg-1.55/raphael-min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>/js/jscripts/jquery.multi-select.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL_CLUSTER;?>/js/jscripts/jquery-ui.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.27/jquery.form-validator.min.js"></script>
 
 
-<link rel="stylesheet" href="<?php echo BASE_URL_CLUSTER; ?>css/base.css" type="text/css" >
-<link rel="stylesheet" href="<?php echo BASE_URL_CLUSTER; ?>css/multi-select.css" type="text/css" >
+<link rel="stylesheet" href="<?php echo BASE_URL_CLUSTER; ?>/css/base.css" type="text/css" >
+<link rel="stylesheet" href="<?php echo BASE_URL_CLUSTER; ?>/css/multi-select.css" type="text/css" >
 
   <title>comTAR</title>
 
@@ -36,7 +36,7 @@
 <div id ="container">
 	<div id="header">
 
-		 <a href="<?php echo site_url('home');?>"><img src="<?php echo BASE_URL_CLUSTER; ?>css/logo7.png" border="0"> </a>
+		 <a href="<?php echo site_url('home');?>"><img src="<?php echo BASE_URL_CLUSTER; ?>/css/logo7.png" border="0"> </a>
 	</div>
 	
 	<div id = "header_container" >

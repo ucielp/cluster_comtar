@@ -1,8 +1,6 @@
 <div id="bysequence">
 
-
-<form action= <?php echo BASE_URL_CLUSTER. "bysequence/success";?> method="POST"> 
-
+<form action= <?php echo BASE_URL_CLUSTER . "/bysequence/success";?> method="POST"> 
 
 <div id="myform">
     <h1><?php echo $title;?></h1>

@@ -15,6 +15,7 @@
 |
 */ 	
 
+# para el cluster
 # Aca tengo que poner rnabiology...
 $config['base_url']	= 'http://'. BASE_URL_UPC . '/target3vu/';
 

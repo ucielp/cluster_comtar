@@ -58,7 +58,9 @@ class Bysequence extends CI_Controller {
 
         }
         else{
-            $job = 'perl /home/uciel/lab/programas/patmatch_2013/patmatch_cluster.pl ';
+			
+			$path_pathatch_cluster = PATH_PATMATCH_CLUSTER;
+            $job = 'perl ' . PATH_PATMATCH_CLUSTER . '/patmatch_cluster.pl ';
             $params = $sequence . ' ' . $name . ' ' . $email . ' ' . $user_country;
             $exec = $job . $params . ' >> /tmp/comtar.log 2>&1 & echo $! ';
             
