@@ -50,12 +50,10 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 
-#web
-//~ $db['default']['username'] = 'jforte_targets';
-//~ $db['default']['password'] = 'jforte_passwd';
-//~ $db['default']['database'] = 'jforte_targets_db';
-
-
+# para el cluster
+//~ $db['default']['username'] = 'comtar';
+//~ $db['default']['password'] = 'ibrcomtar';
+//~ $db['default']['database'] = 'comtar_db';
 
 #local
 $db['default']['username'] = 'uciel';

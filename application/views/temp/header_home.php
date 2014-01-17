@@ -36,7 +36,7 @@
 <div id ="container">
 	<div id="header">
 
-		 <a href="<?php echo site_url('home');?>"><img src="<?php echo BASE_URL_CLUSTER; ?>/css/logo7.png" border="0"> </a>
+		 <a href="<?php echo site_url('home');?>"><img src="<?php echo BASE_URL_CLUSTER; ?>/css/logo_comtar.png" border="0"> </a>
 	</div>
 	
 	<div id = "header_container" >
