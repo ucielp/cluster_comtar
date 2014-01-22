@@ -16,7 +16,7 @@
 */ 	
 
 # para el cluster
-//~ $config['base_url']	= 'http://rnabiology.ibr-conicet.gov.ar/';
+//~ $config['base_url']	= 'http://rnabiology.ibr-conicet.gov.ar/comtar';
 # local
 $config['base_url']	= 'http://'. BASE_URL_UPC . '/target3vu/';
 
