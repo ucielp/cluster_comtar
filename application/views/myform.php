@@ -1,6 +1,6 @@
 <div id="bysequence">
 
-<form action= <?php echo BASE_URL_CLUSTER . "/bysequence/success";?> method="POST"> 
+<form action= <?php echo BASE_URL_CLUSTER . "/index.php?/bysequence/success";?> method="POST"> 
 
 <div id="myform">
     <h1><?php echo $title;?></h1>
@@ -15,7 +15,7 @@
 <h1>Country</h1>
     <p>     <input name="user_country" data-validation="country" >    </p>
     
-<h1>18nt miRNA sequence (position 2-19) <a href='#'class="tooltip">[?]<span><img class="callout" src= "<?php echo site_url();?>/css/callout.gif" />
+<h1>18nt miRNA sequence (position 2-19) <a href='#'class="tooltip">[?]<span><img class="callout" src= "<?php echo BASE_URL_CLUSTER?>/css/callout.gif" />
 			<strong>18 nt<br/></strong>As miRNA sequences can vary in different species, specially positions 1, 20 and 21, we used sequences 2-19 (18 nt) for the search.</span></a>
     <p>    <input name="sequence"  type="sequence" data-validation="rna_validation">   </p>
   
