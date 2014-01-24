@@ -61,7 +61,7 @@ class Bysequence extends CI_Controller {
 			
 			$path_pathatch_cluster = PATH_PATMATCH_CLUSTER;
             $job = 'perl ' . PATH_PATMATCH_CLUSTER . '/patmatch_cluster.pl ';
-            $params = $sequence . ' ' . $name . ' ' . $email . ' ' . $user_country;
+            $params = $sequence . ' "' . $name . '" "' . $email . '" "' . $user_country . '"';
             $exec = $job . $params . ' >> '. LOG_FILE .' 2>&1 & echo $! ';
             
             exec($exec,$op,$retval);
