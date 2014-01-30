@@ -27,6 +27,15 @@ h2 {
 a.h2{
 	color: #yellow; 
 }
+
+h3 { 
+	font-size: 16px; 
+	color: #444444; 
+	padding:0px;
+	}
+
+
+
 p2{
 	font-family: monospace, helvetica, verdana, sans-serif;
 	color: #444444;
@@ -181,13 +190,12 @@ ul.nav li a:hover {
 /*  HEADER RESULTS  */
 .header_result{
 	background-color: rgba(48, 120, 126, 0.2);
-/*
-background: rgba(255,100,0,0.5);
-*/
+/* background: rgba(255,100,0,0.5); */
 
     width: 80%;
     padding: 10px;
-    float:right;
+/*    Esto lo cambie para el cluster  */
+    float:left;
     margin: 20px 0 0 0;
    	border-radius:10px;
     -moz-border-radius:10px;
@@ -269,7 +277,8 @@ color:#444444;
 {
 	font-size: 16px;
 	background: #fff;
-	margin: 180px 0 0 10px;
+/*     Esto lo cambie para el cluster */
+	margin: 50px 0 0 10px;
 	width: 100%;
 	border-collapse: collapse;
 	text-align: left;
@@ -446,7 +455,8 @@ a.tooltip span
 /* Esto es para loading y results*/
 .query_result {
     display:none;
-    margin:200px 0 0 0 ;
+/*    Esto lo cambie para el cluster */
+    margin:10px 0 0 0 ;
 }
 
 .loading{

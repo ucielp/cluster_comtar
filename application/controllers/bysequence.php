@@ -59,18 +59,51 @@ class Bysequence extends CI_Controller {
         }
         else{
 			
-			$path_pathatch_cluster = PATH_PATMATCH_CLUSTER;
+
             $job = 'perl ' . PATH_PATMATCH_CLUSTER . '/patmatch_cluster.pl ';
-            $params = $sequence . ' "' . $name . '" "' . $email . '" "' . $user_country . '"';
+            
+            $result_reference = $this->home_model->get_reference_by_sequence($sequence);
+            
+            if ($result_reference){
+                $table = $result_reference;
+            }
+            else{
+                $table = '00_' . $sequence . '_' . time();
+            }
+            
+            
+            $table = strtoupper($table);
+            $params = $sequence . ' "' . $table . '" "' . $name . '" "' . $email . '" "' . $user_country . '"';
             $exec = $job . $params . ' >> '. LOG_FILE .' 2>&1 & echo $! ';
             
             exec($exec,$op,$retval);
             //~ $this->pid = (int)$op[0];
             
-
+            $this->data['mirna_table'] = $table;
+            
             $this->data['main_content'] = 'formsuccess';
 
             $this->load->view('temp/template_home', $this->data);
+            
+            ############ Esto en caso de correrlo con el qsub ###########
+            //~ $exec = $job . $params . ' >> ' . LOG_FILE;
+            //~ $script_qsub = PATH_PATMATCH_CLUSTER . '/script_qsub.sh';
+            //~ $data = '#!/bin/bash
+//~ ## Argumentos para el qsub
+//~ ##
+//~ #$ -o comtar.log -j y
+//~ #$ -l h_rt=6:00:00
+//~ #$ -cwd
+//~ 
+//~ ' . $exec;
+//~ 
+            //~ write_file($script_qsub, $data);            
+//~ 
+            //~ $new_exec = '/opt/gridengine/bin/linux-x64/qsub ' . $script_qsub;
+//~ 
+	    //~ 
+            //~ exec($new_exec,$op,$retval);
+            
         
         }
         

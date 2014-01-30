@@ -51,14 +51,14 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 
 # para el cluster
-//~ $db['default']['username'] = 'comtar';
-//~ $db['default']['password'] = 'ibrcomtar';
+$db['default']['username'] = 'comtar';
+$db['default']['password'] = 'ibrcomtar';
+$db['default']['database'] = 'comtar_db';
+//~ 
+//~ #local
+//~ $db['default']['username'] = 'uciel';
+//~ $db['default']['password'] = 'ucieluciel';
 //~ $db['default']['database'] = 'comtar_db';
-
-#local
-$db['default']['username'] = 'uciel';
-$db['default']['password'] = 'ucieluciel';
-$db['default']['database'] = 'patmatch_2013';
 
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
