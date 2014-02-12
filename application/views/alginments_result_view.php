@@ -1,3 +1,4 @@
+		<p><a href="javascript:history.go(-1)" class="goback_alignments">Go Back</a></p>
 
  <div class="loading">
 	 <img src="<?php echo base_url(); ?>css/loading.gif" border="0">

@@ -12,7 +12,7 @@ foreach ($targets as $target){
 }
 ?>
 
-<p><a href="<?php echo BASE_URL_CLUSTER . '/index.php?/results/result_details/' . $mirna_table . '/' . base64_encode(serialize($res));?>">View aligmnments</a></p>
+<h3><a href="<?php echo BASE_URL_CLUSTER . '/index.php?/results/result_details/' . $mirna_table . '/' . base64_encode(serialize($res));?>">View aligmnments</a></h3>
 
 
 

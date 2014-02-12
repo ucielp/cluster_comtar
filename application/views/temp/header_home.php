@@ -25,7 +25,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-43175694-1', 'comtar.com.ar');
+  ga('create', 'UA-43175694-5', 'gov.ar');
   ga('send', 'pageview');
 
 </script>
